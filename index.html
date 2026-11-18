@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Body-Tracked Smoke Ghost</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@2.0.5/lib/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #05070a;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #ghost-body {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+  
+  </style>
+</head>
+<body>
+  <canvas id="ghost-body" aria-hidden="true"></canvas>
+  <img id="ghost-face" src="./IMG_1517.jpeg" alt="" hidden>
+  <div id="status" role="status">Starting sketch…</div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
